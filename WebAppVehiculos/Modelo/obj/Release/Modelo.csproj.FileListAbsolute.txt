@@ -1,0 +1,10 @@
+C:\Users\luigi\Desktop\WebAppVehiculos\Modelo\bin\Release\Modelo.dll.config
+C:\Users\luigi\Desktop\WebAppVehiculos\Modelo\bin\Release\Modelo.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Modelo\bin\Release\Modelo.pdb
+C:\Users\luigi\Desktop\WebAppVehiculos\Modelo\bin\Release\EntityFramework.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Modelo\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Modelo\bin\Release\EntityFramework.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Modelo\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Modelo\obj\Release\Modelo.csprojResolveAssemblyReference.cache
+C:\Users\luigi\Desktop\WebAppVehiculos\Modelo\obj\Release\Modelo.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Modelo\obj\Release\Modelo.pdb

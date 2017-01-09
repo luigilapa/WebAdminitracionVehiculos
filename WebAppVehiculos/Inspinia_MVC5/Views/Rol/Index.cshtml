@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Modelo.Rol>
+
+@{
+    ViewBag.Title = "Roles de Usuario";
+}
+
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @using (Html.BeginForm("Create", "Rol", FormMethod.Get))
+                                        {
+                                            <button type="submit" class="btn btn-success btn-circle" title="Nuevo"><i class="fa fa-plus"></i></button>
+                                        }
+                                    </th>
+                                    <th>  Rol </th>
+                                    <th> Descripción </th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Permisos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td></td>
+                                        <td> @Html.DisplayFor(modelItem => item.NombreRol)</td>
+                                        <td> @Html.DisplayFor(modelItem => item.Descripcion)</td>
+                                        <td>
+                                            @using (Html.BeginForm("Edit", "Rol", new { id = item.IdRol }, FormMethod.Get))
+                                            {
+                                                <button type="submit" class="btn btn-warning btn-circle" title="Editar"><i class="fa fa-pencil"></i></button>
+                                            }
+                                        </td>
+                                        <td>
+                                            @using (Html.BeginForm("Delete", "Rol", new { id = item.IdRol }, FormMethod.Get))
+                                            {
+                                                <button type="submit" class="btn btn-danger btn-circle" title="Eliminar"><i class="fa fa-trash-o"></i></button>
+                                            }
+                                        </td>
+                                        <td>
+                                            @using (Html.BeginForm("Permisos", "OpcionRol", new { id = item.IdRol }, FormMethod.Get))
+                                            {
+                                                <button type="submit" class="btn btn-info btn-circle" title="Permisos"><i class="fa fa-lock"></i></button>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>

@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Modelo.Parametros>
+
+@{
+    ViewBag.Title = "Parámetros";
+}
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                @*<th>
+                    @using (Html.BeginForm("Create", "Parametros", FormMethod.Get))
+                    {
+                        <button type="submit" class="btn btn-success btn-circle" title="Nuevo"><i class="fa fa-plus"></i></button>
+                    }
+                </th>*@
+                <th>
+                    Código
+                </th>
+                <th>
+                    Descripción
+                </th>
+                <th>
+                    Valor Principal
+                </th>
+                <th>
+                    Valor Secundario
+                </th>
+                <th></th>
+                @*<th></th>*@
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    @*<td></td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.codigo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.descripcion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.valor_cadena_1)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.valor_cadena_2)
+                    </td>
+                    <td>
+                        @using (Html.BeginForm("Edit", "Parametros", new { id = item.id }, FormMethod.Get))
+                        {
+                            <button type="submit" class="btn btn-warning btn-circle" title="Editar"><i class="fa fa-pencil"></i></button>
+                        }
+                    </td>
+                    @*<td>
+                        @using (Html.BeginForm("Delete", "Parametros", new { id = item.id }, FormMethod.Get))
+                        {
+                            <button type="submit" class="btn btn-danger btn-circle" title="Eliminar"><i class="fa fa-trash-o"></i></button>
+                        }
+                    </td>*@
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+
+

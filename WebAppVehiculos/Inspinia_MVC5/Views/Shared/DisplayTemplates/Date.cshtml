@@ -1,0 +1,24 @@
+﻿@model Nullable<DateTime>
+@using System.Globalization;
+
+@{
+    DateTime dt = DateTime.Now;
+    if (Model != null)
+    {
+        dt = (System.DateTime)Model;
+
+    }
+
+    if (Request.Browser.Type.ToUpper().Contains("IE") || Request.Browser.Type.Contains("InternetExplorer"))
+    {
+        @Html.TextBox("", String.Format("{0:d}", dt.ToShortDateString()), new { @class = "datefield", type = "date" })
+    }
+    else
+    {
+        //Tested in chrome
+        DateTimeFormatInfo dtfi = CultureInfo.CreateSpecificCulture("en-US").DateTimeFormat;
+        dtfi.DateSeparator = "-";
+        dtfi.ShortDatePattern = @"yyyy/MM/dd";
+        @Html.TextBox("", String.Format("{0:d}", dt.ToString("d", dtfi)), new { @class = "datefield", type = "date" })
+    }
+}

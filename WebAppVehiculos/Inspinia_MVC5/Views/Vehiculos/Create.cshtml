@@ -1,0 +1,105 @@
+﻿@model Modelo.Vehiculo
+
+@{
+    ViewBag.Title = "Agregar Vehículo";
+}
+
+                <div class="row">
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+                            <div class="col-lg-6">
+                                <div class="form-horizontal">
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.placaNumeros, "Placa", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.placaLetras, new { htmlAttributes = new { @class = "form-control", @placeholder = "ABC" } })
+                                            @Html.ValidationMessageFor(model => model.placaLetras, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-4">
+                                            @Html.EditorFor(model => model.placaNumeros, new { htmlAttributes = new { @class = "form-control", @placeholder = "0123" } })
+                                            @Html.ValidationMessageFor(model => model.placaNumeros, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.idMarca, "Marca", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-6">
+                                            @Html.DropDownList("idMarca", null, htmlAttributes: new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.idMarca, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.idTipo, "Tipo", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-6">
+                                            @Html.DropDownList("idTipo", null, htmlAttributes: new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.idTipo, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                                <div class="col-lg-6">
+                                    <div class="form-horizontal">
+
+                                        <div class="form-group">
+                                            @Html.LabelFor(model => model.modelo, "Modelo", htmlAttributes: new { @class = "control-label col-md-2" })
+                                            <div class="col-md-10">
+                                                @Html.EditorFor(model => model.modelo, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.modelo, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            @Html.LabelFor(model => model.anio, "Año",htmlAttributes: new { @class = "control-label col-md-2" })
+                                            <div class="col-md-4">
+                                                @Html.EditorFor(model => model.anio, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.anio, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            @Html.LabelFor(model => model.color1, "Color",  htmlAttributes: new { @class = "control-label col-md-2" })
+                                            <div class="col-md-10">
+                                                @Html.EditorFor(model => model.color1, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.color1, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="form-group">
+                                            @Html.LabelFor(model => model.descripcion, "Descripción", htmlAttributes: new { @class = "control-label col-md-2" })
+                                            <div class="col-md-10">
+                                                @Html.EditorFor(model => model.descripcion, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.descripcion, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>                              
+                                    </div>   
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <input type="submit" value="Guardar" class="btn btn-primary" />
+                                </div>
+                            </div>
+                        }
+
+                            
+                </div>
+
+
+
+@section BodyFoot {
+    @using (Html.BeginForm("Index", "Vehiculos", FormMethod.Get))
+    {
+        <button type="submit" class="btn btn-primary btn-circle" title="Regresar a la lista"><i class="fa fa-arrow-left"></i></button>
+    }
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+  
+}

@@ -1,0 +1,57 @@
+﻿@model Modelo.VehiculoChofer
+
+@{
+    ViewBag.Title = "Desasignar Vehiculo - Chofer";
+}
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>¿Estás seguro que quieres eliminar?</h4>
+
+                        <dl class="dl-horizontal">
+                            <dt>
+                               Chofer
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.Usuario.Nombres) @Html.DisplayFor(model => model.Usuario.Apellidos)
+                            </dd>
+
+                            <dt>
+                                Placa
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.Vehiculo.placaLetras) @Html.DisplayFor(model => model.Vehiculo.placaLetras) - @Html.DisplayFor(model => model.Vehiculo.VehiculoMarca.nombre) - @Html.DisplayFor(model => model.Vehiculo.VehiculoTipo.nombre)
+                            </dd>
+
+                            <dt>
+                                Fecha Asignación
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.FechaAsignacion)
+                            </dd>
+
+                        </dl>
+
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-actions no-color">
+                                <input type="submit" value="Eliminar" class="btn btn-warning" />
+                            </div>
+                        }
+
+                    </div>
+                </div>
+
+@section BodyFoot {
+    @using (Html.BeginForm("Index", "VehiculoChofer", FormMethod.Get))
+    {
+        <button type="submit" class="btn btn-primary btn-circle" title="Regresar a la lista"><i class="fa fa-arrow-left"></i></button>
+    }
+}
+
+

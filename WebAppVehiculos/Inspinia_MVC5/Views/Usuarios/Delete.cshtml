@@ -1,0 +1,71 @@
+﻿@model Modelo.Usuario
+
+@{
+    ViewBag.Title = "Eliminar Usuario";
+}
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>¿Estás seguro que quieres eliminar?</h4>
+
+                        <dl class="dl-horizontal">
+                            <dt>
+                                Rol
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.Rol.NombreRol)
+                            </dd>
+
+                            <dt>
+                                Nombres
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.Nombres)
+                            </dd>
+
+                            <dt>
+                                Apellidos
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.Apellidos)
+                            </dd>
+
+                            <dt>
+                               Cédula
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.Cedula)
+                            </dd>
+
+                            <dt>
+                                Es Chofer
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.EsChofer)
+                            </dd>
+
+                        </dl>
+
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-actions no-color">
+                                <input type="submit" value="Eliminar" class="btn btn-warning" />
+                            </div>
+                        }
+
+                    </div>
+                </div>
+
+@section BodyFoot {
+    @using (Html.BeginForm("Index", "Usuarios", FormMethod.Get))
+    {
+        <button type="submit" class="btn btn-primary btn-circle" title="Regresar a la lista"><i class="fa fa-arrow-left"></i></button>
+    }
+}

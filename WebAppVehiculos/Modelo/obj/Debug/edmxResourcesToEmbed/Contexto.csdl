@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MantenimientoVehiculosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Opcion">
+    <Key>
+      <PropertyRef Name="idOpcion" />
+    </Key>
+    <Property Name="idOpcion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="modulo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="controlador" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="accion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="OpcionRol" Relationship="Self.FK_OpcionRol_Opcion" FromRole="Opcion" ToRole="OpcionRol" />
+  </EntityType>
+  <EntityType Name="OpcionRol">
+    <Key>
+      <PropertyRef Name="IdOpcionRol" />
+    </Key>
+    <Property Name="IdOpcionRol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdRol" Type="Int32" Nullable="false" />
+    <Property Name="IdOpcion" Type="Int32" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Opcion" Relationship="Self.FK_OpcionRol_Opcion" FromRole="OpcionRol" ToRole="Opcion" />
+    <NavigationProperty Name="Rol" Relationship="Self.FK_OpcionRol_Rol" FromRole="OpcionRol" ToRole="Rol" />
+  </EntityType>
+  <EntityType Name="Rol">
+    <Key>
+      <PropertyRef Name="IdRol" />
+    </Key>
+    <Property Name="IdRol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreRol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="OpcionRol" Relationship="Self.FK_OpcionRol_Rol" FromRole="Rol" ToRole="OpcionRol" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_Usuario_Rol" FromRole="Rol" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="SolicitudMantenimiento">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdVehiculo" Type="Int32" Nullable="false" />
+    <Property Name="IdChofer" Type="Int32" Nullable="false" />
+    <Property Name="TipoMantenimiento" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Detalle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FechaIngreso" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="FechaEstimadaSalida" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Aprobado" Type="Boolean" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_SolicitudMantenimiento_Usuario" FromRole="SolicitudMantenimiento" ToRole="Usuario" />
+    <NavigationProperty Name="Vehiculo" Relationship="Self.FK_SolicitudMantenimiento_Vehiculo" FromRole="SolicitudMantenimiento" ToRole="Vehiculo" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Cedula" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdRol" Type="Int32" Nullable="false" />
+    <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="Int32" />
+    <Property Name="Clave" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="EsChofer" Type="Boolean" Nullable="false" />
+    <Property Name="NumeroLicencia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TipoLicencia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="FechaVencimientoLicencia" Type="DateTime" Precision="0" />
+    <Property Name="RutaFoto" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="NombreFoto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Rol" Relationship="Self.FK_Usuario_Rol" FromRole="Usuario" ToRole="Rol" />
+    <NavigationProperty Name="SolicitudMantenimiento" Relationship="Self.FK_SolicitudMantenimiento_Usuario" FromRole="Usuario" ToRole="SolicitudMantenimiento" />
+    <NavigationProperty Name="VehiculoChofer" Relationship="Self.FK_VehiculoChofer_Usuario" FromRole="Usuario" ToRole="VehiculoChofer" />
+  </EntityType>
+  <EntityType Name="Vehiculo">
+    <Key>
+      <PropertyRef Name="idVehiculo" />
+    </Key>
+    <Property Name="idVehiculo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="placa" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idMarca" Type="Int32" Nullable="false" />
+    <Property Name="idTipo" Type="Int32" Nullable="false" />
+    <Property Name="modelo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="anio" Type="Int32" />
+    <Property Name="color1" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="color2" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="idResponsable" Type="Int32" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="SolicitudMantenimiento" Relationship="Self.FK_SolicitudMantenimiento_Vehiculo" FromRole="Vehiculo" ToRole="SolicitudMantenimiento" />
+    <NavigationProperty Name="VehiculoMarca" Relationship="Self.FK_vehiculo_vehiculoMarca" FromRole="Vehiculo" ToRole="VehiculoMarca" />
+    <NavigationProperty Name="VehiculoTipo" Relationship="Self.FK_vehiculo_vehiculoTipo" FromRole="Vehiculo" ToRole="VehiculoTipo" />
+    <NavigationProperty Name="VehiculoChofer" Relationship="Self.FK_VehiculoChofer_Vehiculo" FromRole="Vehiculo" ToRole="VehiculoChofer" />
+  </EntityType>
+  <EntityType Name="VehiculoChofer">
+    <Key>
+      <PropertyRef Name="IdVehiculoChofer" />
+    </Key>
+    <Property Name="IdVehiculoChofer" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdChofer" Type="Int32" Nullable="false" />
+    <Property Name="IdVehiculo" Type="Int32" Nullable="false" />
+    <Property Name="FechaAsignacion" Type="DateTime" Precision="3" />
+    <Property Name="FechaDesasignacion" Type="DateTime" Precision="3" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_VehiculoChofer_Usuario" FromRole="VehiculoChofer" ToRole="Usuario" />
+    <NavigationProperty Name="Vehiculo" Relationship="Self.FK_VehiculoChofer_Vehiculo" FromRole="VehiculoChofer" ToRole="Vehiculo" />
+  </EntityType>
+  <EntityType Name="VehiculoMarca">
+    <Key>
+      <PropertyRef Name="idMarca" />
+    </Key>
+    <Property Name="idMarca" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Vehiculo" Relationship="Self.FK_vehiculo_vehiculoMarca" FromRole="VehiculoMarca" ToRole="Vehiculo" />
+  </EntityType>
+  <EntityType Name="VehiculoTipo">
+    <Key>
+      <PropertyRef Name="idTipo" />
+    </Key>
+    <Property Name="idTipo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Vehiculo" Relationship="Self.FK_vehiculo_vehiculoTipo" FromRole="VehiculoTipo" ToRole="Vehiculo" />
+  </EntityType>
+  <Association Name="FK_OpcionRol_Opcion">
+    <End Role="Opcion" Type="Self.Opcion" Multiplicity="1" />
+    <End Role="OpcionRol" Type="Self.OpcionRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Opcion">
+        <PropertyRef Name="idOpcion" />
+      </Principal>
+      <Dependent Role="OpcionRol">
+        <PropertyRef Name="IdOpcion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OpcionRol_Rol">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="1" />
+    <End Role="OpcionRol" Type="Self.OpcionRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="IdRol" />
+      </Principal>
+      <Dependent Role="OpcionRol">
+        <PropertyRef Name="IdRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuario_Rol">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="IdRol" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="IdRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SolicitudMantenimiento_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="SolicitudMantenimiento" Type="Self.SolicitudMantenimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="SolicitudMantenimiento">
+        <PropertyRef Name="IdChofer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SolicitudMantenimiento_Vehiculo">
+    <End Role="Vehiculo" Type="Self.Vehiculo" Multiplicity="1" />
+    <End Role="SolicitudMantenimiento" Type="Self.SolicitudMantenimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehiculo">
+        <PropertyRef Name="idVehiculo" />
+      </Principal>
+      <Dependent Role="SolicitudMantenimiento">
+        <PropertyRef Name="IdVehiculo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VehiculoChofer_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="VehiculoChofer" Type="Self.VehiculoChofer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="VehiculoChofer">
+        <PropertyRef Name="IdChofer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_vehiculo_vehiculoMarca">
+    <End Role="VehiculoMarca" Type="Self.VehiculoMarca" Multiplicity="1" />
+    <End Role="Vehiculo" Type="Self.Vehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehiculoMarca">
+        <PropertyRef Name="idMarca" />
+      </Principal>
+      <Dependent Role="Vehiculo">
+        <PropertyRef Name="idMarca" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_vehiculo_vehiculoTipo">
+    <End Role="VehiculoTipo" Type="Self.VehiculoTipo" Multiplicity="1" />
+    <End Role="Vehiculo" Type="Self.Vehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehiculoTipo">
+        <PropertyRef Name="idTipo" />
+      </Principal>
+      <Dependent Role="Vehiculo">
+        <PropertyRef Name="idTipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VehiculoChofer_Vehiculo">
+    <End Role="Vehiculo" Type="Self.Vehiculo" Multiplicity="1" />
+    <End Role="VehiculoChofer" Type="Self.VehiculoChofer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehiculo">
+        <PropertyRef Name="idVehiculo" />
+      </Principal>
+      <Dependent Role="VehiculoChofer">
+        <PropertyRef Name="IdVehiculo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Contexto" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Opcion" EntityType="Self.Opcion" />
+    <EntitySet Name="OpcionRol" EntityType="Self.OpcionRol" />
+    <EntitySet Name="Rol" EntityType="Self.Rol" />
+    <EntitySet Name="SolicitudMantenimiento" EntityType="Self.SolicitudMantenimiento" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <EntitySet Name="Vehiculo" EntityType="Self.Vehiculo" />
+    <EntitySet Name="VehiculoChofer" EntityType="Self.VehiculoChofer" />
+    <EntitySet Name="VehiculoMarca" EntityType="Self.VehiculoMarca" />
+    <EntitySet Name="VehiculoTipo" EntityType="Self.VehiculoTipo" />
+    <AssociationSet Name="FK_OpcionRol_Opcion" Association="Self.FK_OpcionRol_Opcion">
+      <End Role="Opcion" EntitySet="Opcion" />
+      <End Role="OpcionRol" EntitySet="OpcionRol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OpcionRol_Rol" Association="Self.FK_OpcionRol_Rol">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="OpcionRol" EntitySet="OpcionRol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuario_Rol" Association="Self.FK_Usuario_Rol">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SolicitudMantenimiento_Usuario" Association="Self.FK_SolicitudMantenimiento_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="SolicitudMantenimiento" EntitySet="SolicitudMantenimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SolicitudMantenimiento_Vehiculo" Association="Self.FK_SolicitudMantenimiento_Vehiculo">
+      <End Role="Vehiculo" EntitySet="Vehiculo" />
+      <End Role="SolicitudMantenimiento" EntitySet="SolicitudMantenimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VehiculoChofer_Usuario" Association="Self.FK_VehiculoChofer_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="VehiculoChofer" EntitySet="VehiculoChofer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_vehiculo_vehiculoMarca" Association="Self.FK_vehiculo_vehiculoMarca">
+      <End Role="VehiculoMarca" EntitySet="VehiculoMarca" />
+      <End Role="Vehiculo" EntitySet="Vehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_vehiculo_vehiculoTipo" Association="Self.FK_vehiculo_vehiculoTipo">
+      <End Role="VehiculoTipo" EntitySet="VehiculoTipo" />
+      <End Role="Vehiculo" EntitySet="Vehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VehiculoChofer_Vehiculo" Association="Self.FK_VehiculoChofer_Vehiculo">
+      <End Role="Vehiculo" EntitySet="Vehiculo" />
+      <End Role="VehiculoChofer" EntitySet="VehiculoChofer" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

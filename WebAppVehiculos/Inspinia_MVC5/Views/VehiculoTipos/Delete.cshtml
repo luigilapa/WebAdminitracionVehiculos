@@ -1,0 +1,47 @@
+﻿@model Modelo.VehiculoTipo
+
+@{
+    ViewBag.Title = "Eliminar Tipo Vehículo";
+}
+
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>¿Estás seguro que quieres eliminar?</h4>
+
+                        <dl class="dl-horizontal">
+                            <dt>
+                                Tipo Vehículo
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.nombre)
+                            </dd>
+
+                            <dt>
+                                Descripción
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.descripcion)
+                            </dd>
+                        </dl>
+
+                        @using (Html.BeginForm()) {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-actions no-color">
+                                <input type="submit" value="Eliminar" class="btn btn-warning" />
+                            </div>
+                        }
+
+                    </div>
+                </div>
+
+
+@section BodyFoot {
+    @using (Html.BeginForm("Index", "VehiculoTipos", FormMethod.Get))
+    {
+        <button type="submit" class="btn btn-primary btn-circle" title="Regresar a la lista"><i class="fa fa-arrow-left"></i></button>
+    }
+}

@@ -1,0 +1,58 @@
+﻿@model Modelo.VehiculoChofer
+
+@{
+    ViewBag.Title = "Asignar Vehiculo - Chofer";
+}
+
+                <div class="row">
+                   @using (Html.BeginForm())
+                   {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true)
+
+
+                        <div class="form-group">
+                            @*@Html.LabelFor(model => model.IdChofer, "IdChofer", new { @class = "control-label col-md-2" })*@
+                            <label class="control-label col-md-2">Chofer</label>  
+                            <div class="col-md-4">
+                                @Html.DropDownList("IdChofer", null, htmlAttributes: new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.IdChofer, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @*@Html.LabelFor(model => model.IdVehiculo, "IdVehiculo", new { @class = "control-label col-md-2" })*@
+                            <label class="control-label col-md-2">Vehículo</label>
+                            <div class="col-md-4">
+                                @Html.DropDownList("IdVehiculo", null, htmlAttributes: new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.IdVehiculo, "", new { @class = "text-danger" })
+                            </div>
+                        </div>      
+
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <input type="submit" value="Guardar" class="btn btn-primary" />
+                        </div>
+                    </div>
+
+                   }
+                </div>
+
+
+
+
+@section BodyFoot {
+    @using (Html.BeginForm("Index", "VehiculoChofer", FormMethod.Get))
+    {
+        <button type="submit" class="btn btn-primary btn-circle" title="Regresar a la lista"><i class="fa fa-arrow-left"></i></button>
+    }
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+ 

@@ -1,0 +1,234 @@
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\Inspinia_MVC5.dll.config
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\Inspinia_MVC5.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\Inspinia_MVC5.pdb
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\Antlr3.Runtime.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.SqlServer.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\Newtonsoft.Json.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\PagedList.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\PagedList.Mvc.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Helpers.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Mvc.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Optimization.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Razor.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Razor.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\WebGrease.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\Antlr3.Runtime.pdb
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.SqlServer.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\Newtonsoft.Json.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\PagedList.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\PagedList.Mvc.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Helpers.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Mvc.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Optimization.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Razor.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Razor.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\es\EntityFramework.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Helpers.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Mvc.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\es\System.Web.Optimization.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Optimization.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Razor.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.WebPages.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.WebPages.Deployment.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.WebPages.Razor.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\obj\Debug\Inspinia_MVC5.csprojResolveAssemblyReference.cache
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\obj\Debug\Inspinia_MVC5.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version\Inspinia_MVC5\obj\Debug\Inspinia_MVC5.pdb
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\obj\Debug\Inspinia_MVC5.csprojResolveAssemblyReference.cache
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\Inspinia_MVC5.dll.config
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\Inspinia_MVC5.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\Inspinia_MVC5.pdb
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\Antlr3.Runtime.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\EntityFramework.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\EntityFramework.SqlServer.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\Modelo.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\Newtonsoft.Json.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\PagedList.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\PagedList.Mvc.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\System.Web.Helpers.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\System.Web.Mvc.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\System.Web.Optimization.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\System.Web.Razor.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\System.Web.WebPages.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\System.Web.WebPages.Razor.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\WebGrease.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\Modelo.pdb
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\Antlr3.Runtime.pdb
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\EntityFramework.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\EntityFramework.SqlServer.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\Newtonsoft.Json.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\PagedList.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\PagedList.Mvc.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\System.Web.Helpers.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\System.Web.Mvc.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\System.Web.Optimization.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\System.Web.Razor.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\System.Web.WebPages.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\System.Web.WebPages.Razor.xml
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\es\EntityFramework.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\pl\System.Web.Helpers.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\pl\System.Web.Mvc.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\es\System.Web.Optimization.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\pl\System.Web.Optimization.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\pl\System.Web.Razor.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\pl\System.Web.WebPages.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\pl\System.Web.WebPages.Deployment.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\bin\pl\System.Web.WebPages.Razor.resources.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\obj\Debug\Inspinia_MVC5.dll
+C:\Users\luigi\Desktop\MVC5_Full_Version - copia\Inspinia_MVC5\obj\Debug\Inspinia_MVC5.pdb
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Inspinia_MVC5.dll.config
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Inspinia_MVC5.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Inspinia_MVC5.pdb
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Antlr3.Runtime.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.SqlServer.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Modelo.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Newtonsoft.Json.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.Mvc.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Helpers.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Mvc.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Optimization.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Razor.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Razor.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\WebGrease.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Modelo.pdb
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Antlr3.Runtime.pdb
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.SqlServer.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Newtonsoft.Json.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.Mvc.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Helpers.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Mvc.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Optimization.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Razor.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Razor.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.Optimization.resources.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.Razor.resources.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\obj\Debug\Inspinia_MVC5.csprojResolveAssemblyReference.cache
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\obj\Debug\RdlCompile.cache
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\obj\Debug\RdlCompile.compiled
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\obj\Debug\Inspinia_MVC5.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\obj\Debug\Inspinia_MVC5.pdb
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\Inspinia_MVC5.dll.config
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\Inspinia_MVC5.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\Inspinia_MVC5.pdb
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\Antlr3.Runtime.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.SqlServer.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\Modelo.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\Newtonsoft.Json.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.Mvc.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Helpers.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Mvc.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Optimization.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Razor.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Razor.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\WebGrease.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\Modelo.pdb
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\Antlr3.Runtime.pdb
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.xml
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.SqlServer.xml
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\Newtonsoft.Json.xml
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.xml
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.Mvc.xml
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Helpers.xml
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Mvc.xml
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Optimization.xml
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Razor.xml
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.xml
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.xml
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Razor.xml
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\es\EntityFramework.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.Helpers.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.Mvc.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\es\System.Web.Optimization.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.Optimization.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.Razor.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.WebPages.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.WebPages.Deployment.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.WebPages.Razor.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\obj\Debug\Inspinia_MVC5.csprojResolveAssemblyReference.cache
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\obj\Debug\Inspinia_MVC5.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\obj\Debug\Inspinia_MVC5.pdb
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\Microsoft.SqlServer.Types.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\obj\Debug\RdlCompile.cache
+C:\Users\lpalma\Desktop\TQ\WebAppVehiculos\Inspinia_MVC5\obj\Debug\RdlCompile.compiled
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\Inspinia_MVC5.dll.config
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\Inspinia_MVC5.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\Inspinia_MVC5.pdb
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\Antlr3.Runtime.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.SqlServer.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\Microsoft.ReportViewer.WebForms.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\Microsoft.Web.Infrastructure.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\Modelo.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\Newtonsoft.Json.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.Mvc.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Helpers.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Mvc.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Optimization.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Razor.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Razor.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\WebGrease.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\Modelo.pdb
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\Antlr3.Runtime.pdb
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.xml
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.SqlServer.xml
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\Newtonsoft.Json.xml
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.xml
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.Mvc.xml
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Helpers.xml
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Mvc.xml
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Optimization.xml
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Razor.xml
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.xml
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.xml
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Razor.xml
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.Optimization.resources.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.Razor.resources.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\obj\Debug\Inspinia_MVC5.csprojResolveAssemblyReference.cache
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\obj\Debug\RdlCompile.cache
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\obj\Debug\RdlCompile.compiled
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\obj\Debug\Inspinia_MVC5.dll
+D:\GitHub\WebAppVehiculos\Inspinia_MVC5\obj\Debug\Inspinia_MVC5.pdb

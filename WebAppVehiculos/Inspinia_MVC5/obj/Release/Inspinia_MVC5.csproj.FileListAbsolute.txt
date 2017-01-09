@@ -1,0 +1,172 @@
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\Inspinia_MVC5.dll.config
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\Inspinia_MVC5.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\Inspinia_MVC5.pdb
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\Antlr3.Runtime.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.SqlServer.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\Microsoft.Web.Infrastructure.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\Newtonsoft.Json.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Helpers.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Mvc.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Optimization.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Razor.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Razor.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\WebGrease.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\Antlr3.Runtime.pdb
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.SqlServer.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\Newtonsoft.Json.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Helpers.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Mvc.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Optimization.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Razor.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Razor.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Helpers.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Mvc.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Optimization.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Razor.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.WebPages.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.WebPages.Deployment.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.WebPages.Razor.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\obj\Release\Inspinia_MVC5.csprojResolveAssemblyReference.cache
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\obj\Release\Inspinia_MVC5.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\Templates\MVC5_Full_Version\Inspinia_MVC5\obj\Release\Inspinia_MVC5.pdb
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\Inspinia_MVC5.dll.config
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\Inspinia_MVC5.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\Inspinia_MVC5.pdb
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\Antlr3.Runtime.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.SqlServer.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\Microsoft.Web.Infrastructure.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\Newtonsoft.Json.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Helpers.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Mvc.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Optimization.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Razor.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Razor.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\WebGrease.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\Antlr3.Runtime.pdb
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.SqlServer.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\Newtonsoft.Json.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Helpers.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Mvc.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Optimization.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Razor.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Razor.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Helpers.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Mvc.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Optimization.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Razor.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.WebPages.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.WebPages.Deployment.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.WebPages.Razor.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\obj\Release\Inspinia_MVC5.csprojResolveAssemblyReference.cache
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\obj\Release\Inspinia_MVC5.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\obj\Release\Inspinia_MVC5.pdb
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\PagedList.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\PagedList.Mvc.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\PagedList.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\dia4-6\MVC5_Full_Version\Inspinia_MVC5\bin\PagedList.Mvc.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\Inspinia_MVC5.dll.config
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\Inspinia_MVC5.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\Inspinia_MVC5.pdb
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\Antlr3.Runtime.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.SqlServer.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\Microsoft.Web.Infrastructure.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\Newtonsoft.Json.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\PagedList.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\PagedList.Mvc.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Helpers.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Mvc.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Optimization.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Razor.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Razor.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\WebGrease.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\Antlr3.Runtime.pdb
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\EntityFramework.SqlServer.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\Newtonsoft.Json.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\PagedList.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\PagedList.Mvc.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Helpers.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Mvc.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Optimization.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.Razor.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\System.Web.WebPages.Razor.xml
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\es\EntityFramework.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Helpers.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Mvc.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\es\System.Web.Optimization.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Optimization.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.Razor.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.WebPages.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.WebPages.Deployment.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\bin\pl\System.Web.WebPages.Razor.resources.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\obj\Release\Inspinia_MVC5.csprojResolveAssemblyReference.cache
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\obj\Release\Inspinia_MVC5.dll
+C:\Capac\cursos\ciclo\4 MVC 5 WebApi 2\10 dias\7-10\MVC5_Full_Version\Inspinia_MVC5\obj\Release\Inspinia_MVC5.pdb
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Inspinia_MVC5.dll.config
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Inspinia_MVC5.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Inspinia_MVC5.pdb
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Antlr3.Runtime.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.SqlServer.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Modelo.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Newtonsoft.Json.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.Mvc.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Helpers.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Mvc.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Optimization.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Razor.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Razor.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\WebGrease.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Modelo.pdb
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Antlr3.Runtime.pdb
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\EntityFramework.SqlServer.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\Newtonsoft.Json.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\PagedList.Mvc.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Helpers.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Mvc.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Optimization.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.Razor.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Deployment.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\System.Web.WebPages.Razor.xml
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\es\EntityFramework.resources.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.Helpers.resources.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.Mvc.resources.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\es\System.Web.Optimization.resources.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.Optimization.resources.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.Razor.resources.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.WebPages.resources.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.WebPages.Deployment.resources.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\bin\pl\System.Web.WebPages.Razor.resources.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\obj\Release\Inspinia_MVC5.csprojResolveAssemblyReference.cache
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\obj\Release\RdlCompile.cache
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\obj\Release\RdlCompile.compiled
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\obj\Release\Inspinia_MVC5.dll
+C:\Users\luigi\Desktop\WebAppVehiculos\Inspinia_MVC5\obj\Release\Inspinia_MVC5.pdb

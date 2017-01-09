@@ -1,0 +1,80 @@
+﻿<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <span>
+                        <img alt="image" class="img-circle" src="~/Content/caminero/login.png" style="max-height:50px; max-width:50px;" />
+                    </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">@Session["UsuarioNombre"]</strong>
+                            </span> <span class="text-muted text-xs block">@Session["UsuarioRol"]<b class="caret"></b></span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a href="@Url.Action("CambiarCredenciales", "Sesion")">Cambiar Credenciales</a></li>
+                        <li class="divider"></li>
+                        <li><a href="@Url.Action("CerrarSesion", "Sesion")">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    @ViewBag.Abreviatura
+                </div>
+            </li>
+
+            <li class="@Html.IsSelected(controller: "Inicio")">
+                <a href="@Url.Action("Index", "Inicio")"><i class="fa fa-home"></i> <span class="nav-label" data-i18n="nav.layouts">Inicio</span> <span class="label label-primary pull-right">»</span></a>
+            </li>
+
+            <li class="@Html.IsSelected(controller: "VehiculoMarcas") @Html.IsSelected(controller: "VehiculoTipos") @Html.IsSelected(controller: "Vehiculos")">
+                <a href="@Url.Action("Index", "VehiculoMarcas")"><i class="fa fa-truck"></i> <span class="nav-label" data-i18n="nav.dashboard">Datos Vehículos</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Reportes", cssClass: "in")">
+                    <li class="@Html.IsSelected(action: "VehiculoMarcas")"><a href="@Url.Action("Index", "VehiculoMarcas")">Marcas</a></li>
+                    <li class="@Html.IsSelected(action: "VehiculoMarcas")"><a href="@Url.Action("Index", "VehiculoTipos")">Tipos</a></li>
+                    <li class="@Html.IsSelected(action: "VehiculoMarcas")"><a href="@Url.Action("Index", "Vehiculos")">Vehículos</a></li>
+                </ul>
+            </li>
+
+            <li class="@Html.IsSelected(controller: "SolicitudMantenimiento") @Html.IsSelected(controller: "RegActividad")">
+                <a href="@Url.Action("Index", "SolicitudMantenimiento")"><i class="fa fa-file-text-o"></i> <span class="nav-label" data-i18n="nav.dashboard">Choferes</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "SolicitudMantenimiento", cssClass: "in")">
+                    <li class="@Html.IsSelected(action: "SolicitudMantenimiento")"><a href="@Url.Action("Index", "SolicitudMantenimiento")">Solicitud Mantenimiento</a></li>
+                    <li class="@Html.IsSelected(action: "RegActividad")"><a href="@Url.Action("Index", "RegActividad")">Registro Actividad</a></li>
+                </ul>
+            </li>
+
+            <li class="@Html.IsSelected(controller: "Reportes")">
+                <a href="@Url.Action("Choferes", "Reportes")"><i class="fa fa-newspaper-o"></i> <span class="nav-label" data-i18n="nav.dashboard">Reportes</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Reportes", cssClass: "in")">
+                    <li class="@Html.IsSelected(action: "Choferes")"><a href="@Url.Action("Choferes", "Reportes")" target="_blank">Choferes</a></li>
+                    <li class="@Html.IsSelected(action: "Vehiculos")"><a href="@Url.Action("Vehiculos", "Reportes")" target="_blank">Vehículos</a></li>
+                    <li class="@Html.IsSelected(action: "VehiculoChofer")"><a href="@Url.Action("VehiculoChofer", "Reportes")" target="_blank">Vehículo Chofer</a></li>
+                    <li class="@Html.IsSelected(action: "RegistroActiviades")"><a href="@Url.Action("RegistroActiviades", "Reportes")" target="_blank">Registro Actividades</a></li>
+                    <li class="@Html.IsSelected(action: "SolicitudMantenimiento")"><a href="@Url.Action("SolicitudMantenimiento", "Reportes")" target="_blank">Solicitud Mantenimiento</a></li>
+                </ul>
+            </li>
+
+
+            <li class="@Html.IsSelected(controller: "Usuarios") @Html.IsSelected(controller: "VehiculoChofer")">
+                <a href="@Url.Action("Index", "VehiculoChofer")"><i class="fa fa-cogs"></i> <span class="nav-label" data-i18n="nav.dashboard">Administración</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "VehiculoChofer", cssClass: "in")">
+                    <li class="@Html.IsSelected(action: "Usuarios")"><a href="@Url.Action("Index", "Usuarios")">Usuarios</a></li>
+                    <li class="@Html.IsSelected(action: "VehiculoChofer")"><a href="@Url.Action("Index", "VehiculoChofer")">Vehículo Chofer</a></li>
+                </ul>
+            </li>
+
+
+            <li class="@Html.IsSelected(controller: "Parametros") @Html.IsSelected(controller: "Rol") @Html.IsSelected(controller: "Opcion")">
+                <a href="@Url.Action("Index", "Parametros")"><i class="fa fa-sitemap"></i> <span class="nav-label" data-i18n="nav.dashboard">Configuración</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Reportes", cssClass: "in")">
+                    <li class="@Html.IsSelected(action: "Parametros")"><a href="@Url.Action("Index", "Parametros")">Parametros</a></li>
+                    <li class="@Html.IsSelected(action: "Rol")"><a href="@Url.Action("Index", "Rol")">Roles</a></li>
+                    <li class="@Html.IsSelected(action: "Opcion")"><a href="@Url.Action("Index", "Opcion")">Opciones</a></li>
+                </ul>
+            </li>
+          
+        </ul>
+    </div>
+</nav>

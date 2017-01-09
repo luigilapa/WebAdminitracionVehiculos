@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Modelo.RegistroActividad>
+
+@{
+    ViewBag.Title = "Registro Actividad";
+}
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <tr>
+            <th>
+                @using (Html.BeginForm("CreateEdit", "RegActividad", FormMethod.Get))
+                {
+                    <button type="submit" class="btn btn-success btn-circle" title="Nuevo"><i class="fa fa-plus"></i></button>
+                }
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario.Nombres)
+            </th>
+            <th>
+                Placa
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KmInicial)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KmFinal)
+            </th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td></td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Usuario.Nombres)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Vehiculo.placaLetras) @Html.DisplayFor(modelItem => item.Vehiculo.placaNumeros)
+                </td>
+                <td>
+                   @DateTime.Parse(@Html.DisplayFor(modelItem => item.Fecha).ToString()).ToShortDateString()
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KmInicial)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KmFinal)
+                </td>
+                <td>
+                    @using (Html.BeginForm("CreateEdit", "RegActividad", new {id = item.IdRegistro }, FormMethod.Get))
+                    {
+                        <button type="submit" class="btn btn-warning btn-circle" title="Editar"><i class="fa fa-pencil"></i></button>
+                    }
+                </td>
+                <td>
+                    @using (Html.BeginForm("Delete", "RegActividad", new {id = item.IdRegistro }, FormMethod.Get))
+                    {
+                        <button type="submit" class="btn btn-danger btn-circle" title="Eliminar"><i class="fa fa-trash-o"></i></button>
+                    }
+                </td>
+
+            </tr>
+        }
+
+    </table>
+
+</div>
+
+

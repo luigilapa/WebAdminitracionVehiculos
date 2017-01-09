@@ -1,0 +1,75 @@
+﻿@model Inspinia_MVC5.Extencion.UsuarioCredenciales
+
+@{
+    ViewBag.Title = "CambiarCredenciales";
+}
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-horizontal">
+                                @Html.ValidationSummary(true)
+
+                                <div class="bg-success" style="padding:2px 2px 0px 2px; border-radius:10px 10px;">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Usuario, new { @class = "control-label col-md-4" })
+                                        <div class="col-md-6">
+                                            @Html.EditorFor(model => model.Usuario)
+                                            @Html.ValidationMessageFor(model => model.Usuario, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group ">
+                                        @Html.LabelFor(model => model.Clave, new { @class = "control-label col-md-4" })
+                                        <div class="col-md-6">
+                                            @Html.PasswordFor(model => model.Clave, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.Clave, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.NuevoUsuario,"Nuevo Usuario", new { @class = "control-label col-md-4" })
+                                    <div class="col-md-6">
+                                        @Html.EditorFor(model => model.NuevoUsuario, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.NuevoUsuario, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.NuevaClave,"Nueva Clave", new { @class = "control-label col-md-4" })
+                                    <div class="col-md-6">
+                                        @Html.PasswordFor(model => model.NuevaClave, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.NuevaClave, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.ConfirmarClave, "Confirmar Clave", new { @class = "control-label col-md-4" })
+                                    <div class="col-md-6">
+                                        @Html.PasswordFor(model => model.ConfirmarClave, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.ConfirmarClave, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        <input type="submit" value="Guardar" class="btn btn-primary" />
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+ 

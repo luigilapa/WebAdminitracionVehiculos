@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Modelo.SolicitudMantenimiento>
+
+@{
+    ViewBag.Title = "Solicitud Mantenimiento";
+}
+                @Html.ValidationSummary(true)
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @using (Html.BeginForm("Create", "SolicitudMantenimiento", FormMethod.Get))
+                                    {
+                                        <button type="submit" class="btn btn-success btn-circle" title="Nuevo"><i class="fa fa-plus"></i></button>
+                                    }
+                                </th>
+                                <th>
+                                    Chofer
+                                </th>
+                                <th>
+                                    Vehículo
+                                </th>
+                                <th>
+                                    Tipo
+                                </th>
+                                <th>
+                                    Subtipo
+                                </th>
+                                <th>
+                                    Fecha Ingreso
+                                </th>
+                                <th>
+                                    Fecha Salida
+                                </th>
+                                <th>
+                                   Aprobado
+                                </th>
+  
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Usuario.Nombres) @Html.DisplayFor(modelItem => item.Usuario.Apellidos)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Vehiculo.placaLetras) @Html.DisplayFor(modelItem => item.Vehiculo.placaNumeros) - @Html.DisplayFor(modelItem => item.Vehiculo.VehiculoMarca.nombre) - @Html.DisplayFor(modelItem => item.Vehiculo.VehiculoTipo.nombre)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TipoMantenimiento)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SubTipoMantimiento)
+                                    </td>
+                                    <td>
+                                         @Convert.ToDateTime((@item.FechaIngreso.ToShortDateString())).ToShortDateString() 
+                                    </td>
+                                    <td>
+                                        @Convert.ToDateTime((@item.FechaEstimadaSalida.ToShortDateString())).ToShortDateString()
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Aprobado)
+                                    </td>
+                                    <td>
+                                        @if (item.Aprobado == false)
+                                        {
+                                            using (Html.BeginForm("Delete", "SolicitudMantenimiento", new { id = item.IdSolicitud }, FormMethod.Get))
+                                            {
+                                            <button type="submit" class="btn btn-danger btn-circle" title="Eliminar"><i class="fa fa-trash-o"></i></button>
+                                           }
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (item.Aprobado == false)
+                                        {
+                                           using (Html.BeginForm("Aprobar", "SolicitudMantenimiento", new { id = item.IdSolicitud }, FormMethod.Get))
+                                           {
+                                            <button type="submit" class="btn btn-info btn-circle" title="Aprobar"><i class="fa fa-check"></i></button>
+                                           }
+                                        }
+                                        
+                                    </td>
+                                    <td>
+                                        @if (item.Aprobado == false)
+                                        {
+                                            using (Html.BeginForm("Desaprobar", "SolicitudMantenimiento", new { id = item.IdSolicitud }, FormMethod.Get))
+                                            {
+                                                <button type="submit" class="btn btn-warning btn-circle" title="Desaprobar"><i class="fa fa-times-circle"></i></button>
+                                            }
+                                        }
+                                       
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+

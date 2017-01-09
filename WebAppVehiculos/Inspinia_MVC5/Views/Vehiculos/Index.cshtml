@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Modelo.Vehiculo>
+
+@{
+    ViewBag.Title = "Vehículos";
+}
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @using (Html.BeginForm("Create", "Vehiculos", FormMethod.Get))
+                                    {
+                                        <button type="submit" class="btn btn-success btn-circle" title="Nuevo"><i class="fa fa-plus"></i></button>
+                                    }
+                                </th>
+                                <th> Marca </th>
+                                <th> Tipo </th>
+                                <th> Placa </th>
+                                <th> Modelo </th>
+                                <th> Año </th>
+                                <th> Color </th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td></td>
+
+                                    <td> @Html.DisplayFor(modelItem => item.VehiculoMarca.nombre)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.VehiculoTipo.nombre) </td>
+                                    <td> @Html.DisplayFor(modelItem => item.placaLetras) @Html.DisplayFor(modelItem => item.placaNumeros) </td>
+                                    <td> @Html.DisplayFor(modelItem => item.modelo) </td>
+                                    <td> @Html.DisplayFor(modelItem => item.anio) </td>
+                                    <td> @Html.DisplayFor(modelItem => item.color1) </td>
+                                    <td>
+                                        @using (Html.BeginForm("Edit", "Vehiculos", new { id = item.idVehiculo }, FormMethod.Get))
+                                        {
+                                            <button type="submit" class="btn btn-warning btn-circle" title="Editar"><i class="fa fa-pencil"></i></button>
+                                        }
+                                    </td>
+                                    <td>
+                                        @using (Html.BeginForm("Delete", "Vehiculos", new { id = item.idVehiculo }, FormMethod.Get))
+                                        {
+                                            <button type="submit" class="btn btn-danger btn-circle" title="Eliminar"><i class="fa fa-trash-o"></i></button>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
