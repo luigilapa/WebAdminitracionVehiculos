@@ -142,7 +142,7 @@
                     <div class="form-group">
                         <label class = "control-label col-md-4" >Hora</label>
                         <div class="col-md-3">
-                            <input type="time" id="Hora" name="Hora" class="col-md-12"/>
+                            <input type="time" id="Hora" name="Hora" value="" class="col-md-12"/>
                         </div>
                     </div>
 
@@ -204,6 +204,8 @@
             $("#LugarLlegada").val(row.find('.llegada').text());
             $("#Motivo").val(row.find('.motivo').text());
             $("#JefeDepartamental").val(row.find('.jefe').text());
+
+            alert(row.find('.hora').text());
         }
 
         function LimpiarModal() {
