@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Modelo.VehiculoMarca>
+
+@{
+    ViewBag.Title = "Marcas";
+}
+
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @using (Html.BeginForm("Create", "VehiculoMarcas", FormMethod.Get))
+                                        {
+                                            <button type="submit" class="btn btn-success btn-circle" title="Nuevo"><i class="fa fa-plus"></i></button>
+                                        }
+                                    </th>
+                                    <th> Nombre Marca </th>
+                                    <th> Descripción </th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td></td>
+                                        <td> @Html.DisplayFor(modelItem => item.nombre)</td>
+                                        <td> @Html.DisplayFor(modelItem => item.descripcion)</td>
+
+                                        <td>
+                                        <td>
+                                            @using (Html.BeginForm("Edit", "VehiculoMarcas", new { id = item.idMarca }, FormMethod.Get))
+                                            {
+                                                <button type="submit" class="btn btn-warning btn-circle" title="Editar"><i class="fa fa-pencil"></i></button>
+                                            }
+                                        </td>
+                                        <td>
+                                            @using (Html.BeginForm("Delete", "VehiculoMarcas", new { id = item.idMarca }, FormMethod.Get))
+                                            {
+                                                <button type="submit" class="btn btn-danger btn-circle" title="Eliminar"><i class="fa fa-trash-o"></i></button>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>

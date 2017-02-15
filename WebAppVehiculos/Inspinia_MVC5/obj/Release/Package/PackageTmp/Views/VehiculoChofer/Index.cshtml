@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Modelo.VehiculoChofer>
+
+@{
+    ViewBag.Title = "Vehiculo Chofer";
+}
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @using (Html.BeginForm("Create", "VehiculoChofer", FormMethod.Get))
+                                    {
+                                        <button type="submit" class="btn btn-success btn-circle" title="Nuevo"><i class="fa fa-plus"></i></button>
+                                    }
+                                </th>
+                                <th>
+                                    @*@Html.DisplayNameFor(model => model.Usuario.Nombres)*@
+                                    Chofer
+                                </th>
+                                <th>
+                                    @*@Html.DisplayNameFor(model => model.Vehiculo.placa)*@
+                                    Vehículo
+                                </th>
+                                <th>
+                                    Fecha Asignación
+                                </th>
+
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Usuario.Nombres) @Html.DisplayFor(modelItem => item.Usuario.Apellidos) 
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Vehiculo.placaLetras) @Html.DisplayFor(modelItem => item.Vehiculo.placaNumeros) - @Html.DisplayFor(modelItem => item.Vehiculo.VehiculoMarca.nombre) - @Html.DisplayFor(modelItem => item.Vehiculo.VehiculoTipo.nombre)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.FechaAsignacion)
+                                    </td>
+
+                                    <td>
+                                        @using (Html.BeginForm("Delete", "VehiculoChofer", new { id = item.IdVehiculoChofer }, FormMethod.Get))
+                                        {
+                                            <button type="submit" class="btn btn-danger btn-circle" title="Eliminar"><i class="fa fa-trash-o"></i></button>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+
+

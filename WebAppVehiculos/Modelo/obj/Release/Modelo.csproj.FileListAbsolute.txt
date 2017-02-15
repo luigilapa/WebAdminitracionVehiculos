@@ -8,3 +8,12 @@ C:\Users\luigi\Desktop\WebAppVehiculos\Modelo\bin\Release\EntityFramework.SqlSer
 C:\Users\luigi\Desktop\WebAppVehiculos\Modelo\obj\Release\Modelo.csprojResolveAssemblyReference.cache
 C:\Users\luigi\Desktop\WebAppVehiculos\Modelo\obj\Release\Modelo.dll
 C:\Users\luigi\Desktop\WebAppVehiculos\Modelo\obj\Release\Modelo.pdb
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Release\Modelo.dll.config
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Release\Modelo.dll
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Release\Modelo.pdb
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Release\EntityFramework.dll
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Release\EntityFramework.SqlServer.dll
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Release\EntityFramework.xml
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Release\EntityFramework.SqlServer.xml
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\obj\Release\Modelo.dll
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\obj\Release\Modelo.pdb

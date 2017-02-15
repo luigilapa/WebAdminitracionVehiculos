@@ -1,0 +1,70 @@
+﻿@model Inspinia_MVC5.Extencion.HojaRutaDetalle
+
+@{
+    ViewBag.Title = "Eliminar Detalle";
+}
+
+<div class="row">
+    <div class="col-lg-6">
+        <h4>¿Estás seguro que quieres eliminar?</h4>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Hora)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Hora)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.LugarLlegada)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.LugarLlegada)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.LugarSalida)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.LugarSalida)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Motivo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Motivo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.JefeDepartamental)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.JefeDepartamental)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-actions no-color">
+                <input type="submit" value="Eliminar" class="btn btn-warning" />
+            </div>
+        }
+
+    </div>
+</div>
+
+@section BodyFoot {
+    @using (Html.BeginForm("Index", "Opcion", FormMethod.Get))
+    {
+        <button type="submit" class="btn btn-primary btn-circle" title="Regresar a la lista"><i class="fa fa-arrow-left"></i></button>
+    }
+}
+

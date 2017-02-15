@@ -72,6 +72,9 @@ namespace Inspinia_MVC5.Reporteria.Paginas
             this.CmbAprobado.Items.Add(new ListItem("NO", "False"));
             this.CmbAprobado.Items.Add(new ListItem("TODOS", ""));
             this.CmbAprobado.SelectedValue = "";
+
+            this.TxtFechaInicial.Text = DateTime.Today.ToShortDateString();
+            this.TxtFechaFinal.Text = DateTime.Today.ToShortDateString();
         }
     }
 }

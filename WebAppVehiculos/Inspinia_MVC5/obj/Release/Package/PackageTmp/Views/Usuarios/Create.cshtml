@@ -1,0 +1,167 @@
+﻿@model Modelo.Usuario
+
+@{
+    ViewBag.Title = "Agregar Usuario";
+}
+
+                <div class="row">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="col-lg-6">
+                            <div class="form-horizontal">
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Nombres, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Nombres, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Nombres, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Apellidos, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Apellidos, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Apellidos, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Cedula,"Cédula", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-6">
+                                        @Html.EditorFor(model => model.Cedula, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Cedula, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.IdRol, "Rol", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-6">
+                                        @Html.DropDownList("IdRol", null, htmlAttributes: new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.IdRol, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Correo, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Correo, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Correo, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Telefono,"Celular", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-4">
+                                        @Html.EditorFor(model => model.Telefono, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Telefono, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Direccion, "Dirección", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Direccion, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Direccion, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>                                
+
+                            </div>
+                        </div>
+                            <div class="col-lg-6">
+                                <div class="form-horizontal">
+
+
+                                    <div class="form-group" id="InputDate">
+                                        @Html.LabelFor(model => model.FechaNacimiento, "Fecha Nacimiento", new { @class = "control-label col-md-4" })
+                                        <div class="input-group date col-md-4">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            @Html.EditorFor(model => model.FechaNacimiento)
+                                            @Html.ValidationMessageFor(model => model.FechaNacimiento, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    @*<div class="form-group">
+                                        @Html.LabelFor(model => model.EsChofer, "Es chofer", htmlAttributes: new { @class = "control-label col-md-4" })
+                                        <div class="col-md-2">
+                                            @Html.EditorFor(model => model.EsChofer, new { htmlAttributes = new { @class = "form-control", disabled = "disabled", @readonly = "readonly" } })
+                                            @Html.ValidationMessageFor(model => model.EsChofer, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>*@
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.TipoLicencia,"Tipo Licencia", htmlAttributes: new { @class = "control-label col-md-4" })
+                                        <div class="col-md-2">
+                                            @Html.EditorFor(model => model.TipoLicencia, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.TipoLicencia, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group fecha_licencia" id="InputDate">
+                                        @Html.LabelFor(model => model.FechaVencimientoLicencia, "Vencimiento Licencia", new { @class = "control-label col-md-4" })
+                                        <div id="div_fecha" class="input-group date col-md-4">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            @Html.EditorFor(model => model.FechaVencimientoLicencia)
+                                            @Html.ValidationMessageFor(model => model.FechaVencimientoLicencia, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <input type="submit" value="Guardar" class="btn btn-primary" />
+                                </div>
+                            </div>
+                    }
+                </div>
+
+
+
+@section BodyFoot {
+    @using (Html.BeginForm("Index", "Usuarios", FormMethod.Get))
+    {
+        <button type="submit" class="btn btn-primary btn-circle" title="Regresar a la lista"><i class="fa fa-arrow-left"></i></button>
+    }
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+        $(document).ready(function () {
+            if ($('#IdRol').find(":selected").text() == "Chofer") {
+                $("#EsChofer").prop("disabled", true);
+                $("#TipoLicencia").prop("disabled", false);
+                $("#FechaVencimientoLicencia").prop("disabled", false);
+                $("#EsChofer").prop('checked', false);
+                $(".fecha_licencia").show();
+            } else {
+                $("#EsChofer").prop("disabled", true);
+                $("#TipoLicencia").prop("disabled", true);
+                $("#FechaVencimientoLicencia").prop("disabled", true);
+                $("#EsChofer").prop('checked', false);
+                $(".fecha_licencia").hide();
+            }
+           
+        });
+
+        $('#IdRol').on('change', function () {
+            if ($(this).find(":selected").text() == "Chofer") {
+                $("#EsChofer").prop("disabled", true);
+                $("#TipoLicencia").prop("disabled", false);
+                $("#FechaVencimientoLicencia").prop("disabled", false);
+                $("#EsChofer").prop('checked', true);
+                $(".fecha_licencia").show();
+            } else {
+                $("#EsChofer").prop("disabled", true);
+                $("#TipoLicencia").prop("disabled", true);
+                $("#FechaVencimientoLicencia").prop("disabled", true);
+                $("#EsChofer").prop('checked', false);
+                $(".fecha_licencia").hide();
+            }
+        });
+
+</script>
+}

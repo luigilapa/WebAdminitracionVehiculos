@@ -26,3 +26,13 @@ D:\GitHub\WebAppVehiculos\Modelo\bin\Debug\EntityFramework.xml
 D:\GitHub\WebAppVehiculos\Modelo\bin\Debug\EntityFramework.SqlServer.xml
 D:\GitHub\WebAppVehiculos\Modelo\obj\Debug\Modelo.dll
 D:\GitHub\WebAppVehiculos\Modelo\obj\Debug\Modelo.pdb
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Debug\Modelo.dll.config
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Debug\Modelo.dll
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Debug\Modelo.pdb
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Debug\EntityFramework.dll
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Debug\EntityFramework.xml
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\obj\Debug\Modelo.dll
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\obj\Debug\Modelo.pdb
+D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache

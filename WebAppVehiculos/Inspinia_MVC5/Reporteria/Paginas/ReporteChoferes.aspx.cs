@@ -45,20 +45,20 @@ namespace Inspinia_MVC5.Reporteria.Paginas
 
             this.cmbChofer.SelectedValue = "";
 
-            var roles = db.Rol
-                .Where(x => x.Activo == true)
-                .Select(x => new { Id = x.IdRol.ToString(), Nombre = x.NombreRol})
-                .OrderBy(x => x.Nombre)
-                .ToList();
+            //var roles = db.Rol
+            //    .Where(x => x.Activo == true)
+            //    .Select(x => new { Id = x.IdRol.ToString(), Nombre = x.NombreRol})
+            //    .OrderBy(x => x.Nombre)
+            //    .ToList();
 
-            roles.Add(new { Id = "", Nombre = "Todos" });
+            //roles.Add(new { Id = "", Nombre = "Todos" });
 
-            this.CmbRol.DataSource = roles;
-            this.CmbRol.DataValueField = "Id";
-            this.CmbRol.DataTextField = "Nombre";
-            this.CmbRol.DataBind();
+            //this.CmbRol.DataSource = roles;
+            //this.CmbRol.DataValueField = "Id";
+            //this.CmbRol.DataTextField = "Nombre";
+            //this.CmbRol.DataBind();
 
-            this.CmbRol.SelectedValue = "";
+            //this.CmbRol.SelectedValue = "";
         }
     }
 }

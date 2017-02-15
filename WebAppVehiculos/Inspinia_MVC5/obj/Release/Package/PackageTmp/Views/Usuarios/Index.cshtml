@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Modelo.Usuario>
+
+@{
+    ViewBag.Title = "Usuarios";
+}
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @using (Html.BeginForm("Create", "Usuarios", FormMethod.Get))
+                                    {
+                                        <button type="submit" class="btn btn-success btn-circle" title="Nuevo"><i class="fa fa-plus"></i></button>
+                                    }
+                                </th>
+                                <th>
+                                    Rol
+                                </th>
+                                <th>
+                                    Nombres
+                                </th>
+                                <th>
+                                    Apellidos
+                                </th>
+                                <th>
+                                   Cédula
+                                </th>
+                                <th>
+                                    Correo
+                                </th>
+                                <th>
+                                    Teléfono
+                                </th>
+
+                                <th>
+                                    Es Chofer
+                                </th>
+
+
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td></td>
+                                    <td> @Html.DisplayFor(modelItem => item.Rol.NombreRol) </td>
+                                    <td> @Html.DisplayFor(modelItem => item.Nombres) </td>
+                                    <td> @Html.DisplayFor(modelItem => item.Apellidos)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.Cedula)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.Correo)</td>
+                                    <td> @Html.DisplayFor(modelItem => item.Telefono) </td>
+                                    <td> @Html.DisplayFor(modelItem => item.EsChofer) </td>
+                                    <td>
+                                        @using (Html.BeginForm("Edit", "Usuarios", new { id = item.IdUsuario }, FormMethod.Get))
+                                        {
+                                            <button type="submit" class="btn btn-warning btn-circle" title="Editar"><i class="fa fa-pencil"></i></button>
+                                        }
+                                    </td>
+                                    <td>
+                                        @using (Html.BeginForm("Delete", "Usuarios", new { id = item.IdUsuario }, FormMethod.Get))
+                                        {
+                                            <button type="submit" class="btn btn-danger btn-circle" title="Eliminar"><i class="fa fa-trash-o"></i></button>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>

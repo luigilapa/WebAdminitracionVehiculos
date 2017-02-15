@@ -9,6 +9,7 @@ using System.Web;
 using System.Web.Mvc;
 using Modelo;
 using Inspinia_MVC5.Tags;
+using Inspinia_MVC5.Extencion;
 
 namespace Inspinia_MVC5.Controllers
 {
@@ -78,6 +79,29 @@ namespace Inspinia_MVC5.Controllers
                 solicitudMantenimiento.Activo = true;
                 db.SolicitudMantenimiento.Add(solicitudMantenimiento);
                 await db.SaveChangesAsync();
+
+                /*envio de correo*/
+                string xml = System.IO.File.ReadAllText(Server.MapPath(Url.Content("~/Extencion/PlantillasCorreo/PlantillaSolicitudMantenimiento.html")));
+                var html = xml.ToString();
+
+                db = new Contexto();
+
+                Parametros parametro = db.Parametros.First(x => x.codigo == "CORREOADMI" && x.activo == true);
+
+                Usuario chofer = db.Usuario.First(x => x.IdUsuario == solicitudMantenimiento.IdChofer);
+                Vehiculo vehiculo = db.Vehiculo.First(x => x.idVehiculo == solicitudMantenimiento.IdVehiculo);
+
+                html = html.Replace("@chofer", chofer.Nombres + "  " + chofer.Apellidos)
+                           .Replace("@vehiculo", vehiculo.VehiculoMarca.nombre + " - " + vehiculo.VehiculoTipo.nombre + " - " + vehiculo.modelo)
+                           .Replace("@tipo", solicitudMantenimiento.TipoMantenimiento)
+                           .Replace("@detalle", solicitudMantenimiento.Detalle)
+                           .Replace("@fechaingreso", solicitudMantenimiento.FechaIngreso.ToShortDateString())
+                           .Replace("@fechasalida", solicitudMantenimiento.FechaEstimadaSalida.ToShortDateString())
+                           .Replace("@nombres", parametro.valor_cadena_1);
+
+                Correo.EnviarCorreoGmail(parametro.valor_cadena_2, "Solicitud de Mantenimiento", html);
+                /**/
+
                 return RedirectToAction("Index");
             }
 
@@ -177,6 +201,9 @@ namespace Inspinia_MVC5.Controllers
             //db.SolicitudMantenimiento.Remove(solicitudMantenimiento);
             solicitudMantenimiento.Aprobado = true;
             await db.SaveChangesAsync();
+
+            EnviarCorreoSolicitud(solicitudMantenimiento, "Aprobado");
+
             return RedirectToAction("Index");
         }
 
@@ -203,7 +230,40 @@ namespace Inspinia_MVC5.Controllers
             //db.SolicitudMantenimiento.Remove(solicitudMantenimiento);
             solicitudMantenimiento.Desaprobado = true;
             await db.SaveChangesAsync();
+
+            EnviarCorreoSolicitud(solicitudMantenimiento, "Rechazado");
+
             return RedirectToAction("Index");
+        }
+
+        void EnviarCorreoSolicitud(SolicitudMantenimiento solicitudMantenimiento, string respuesta) {
+            try
+            {
+                /*envio de correo*/
+                string xml = System.IO.File.ReadAllText(Server.MapPath(Url.Content("~/Extencion/PlantillasCorreo/PlantillaSolMan_Apro_Rech.html")));
+                var html = xml.ToString();
+
+                db = new Contexto();
+
+                Usuario chofer = db.Usuario.First(x => x.IdUsuario == solicitudMantenimiento.IdChofer);
+                Vehiculo vehiculo = db.Vehiculo.First(x => x.idVehiculo == solicitudMantenimiento.IdVehiculo);
+
+                html = html.Replace("@vehiculo", vehiculo.VehiculoMarca.nombre + " - " + vehiculo.VehiculoTipo.nombre + " - " + vehiculo.modelo)
+                           .Replace("@tipo", solicitudMantenimiento.TipoMantenimiento)
+                           .Replace("@detalle", solicitudMantenimiento.Detalle)
+                           .Replace("@fechaingreso", solicitudMantenimiento.FechaIngreso.ToShortDateString())
+                           .Replace("@fechasalida", solicitudMantenimiento.FechaEstimadaSalida.ToShortDateString())
+                           .Replace("@nombres", chofer.Nombres + "  " + chofer.Apellidos)
+                           .Replace("@estado", respuesta);
+
+                Correo.EnviarCorreoGmail(chofer.Correo, "Respuesta Solicitud de Mantenimiento", html);
+                /**/
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         protected override void Dispose(bool disposing)

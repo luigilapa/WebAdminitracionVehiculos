@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Modelo.Opcion>
+
+@{
+    ViewBag.Title = "Opciones";
+}
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @using (Html.BeginForm("Create", "Opcion", FormMethod.Get))
+                                    {
+                                        <button type="submit" class="btn btn-success btn-circle" title="Nuevo"><i class="fa fa-plus"></i></button>
+                                    }
+                                </th>
+                                <th>
+                                    Modulo
+                                </th>
+                                <th>
+                                    Descripción
+                                </th>
+                                <th>
+                                    Controlador
+                                </th>
+                                <th>
+                                    Accion
+                                </th>
+
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.modulo)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.descripcion)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.controlador)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.accion)
+                                    </td>
+
+                                    <td>
+                                        @using (Html.BeginForm("Edit", "Opcion", new { id = item.idOpcion }, FormMethod.Get))
+                                        {
+                                            <button type="submit" class="btn btn-warning btn-circle" title="Editar"><i class="fa fa-pencil"></i></button>
+                                        }
+                                    </td>
+                                    <td>
+                                        @using (Html.BeginForm("Delete", "opcion", new { id = item.idOpcion }, FormMethod.Get))
+                                        {
+                                            <button type="submit" class="btn btn-danger btn-circle" title="Eliminar"><i class="fa fa-trash-o"></i></button>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            

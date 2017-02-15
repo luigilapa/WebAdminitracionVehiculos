@@ -1,0 +1,97 @@
+﻿@model Modelo.RegistroActividadDetalle
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>_CreateEditDetalle RegistroActividadDetalle</h5>
+                </div>
+                <div class="ibox-content">
+
+				@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(model => model.IdRegistro,Model.IdRegistro)
+        @Html.HiddenFor(model => model.IdRegistroDetalle)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IdRegistro, "IdRegistro", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("IdRegistro", String.Empty)
+                @Html.ValidationMessageFor(model => model.IdRegistro)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Hora, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Hora)
+                @Html.ValidationMessageFor(model => model.Hora)
+            </div>
+        </div>
+
+        
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LugarSalida, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LugarSalida)
+                @Html.ValidationMessageFor(model => model.LugarSalida)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LugarLlegada, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LugarLlegada)
+                @Html.ValidationMessageFor(model => model.LugarLlegada)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Motivo, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Motivo)
+                @Html.ValidationMessageFor(model => model.Motivo)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.JefeDepartamental, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.JefeDepartamental)
+                @Html.ValidationMessageFor(model => model.JefeDepartamental)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Activo, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Activo)
+                @Html.ValidationMessageFor(model => model.Activo)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary" />
+				@Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-white"})
+            </div>
+        </div>
+    </div>
+}
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+

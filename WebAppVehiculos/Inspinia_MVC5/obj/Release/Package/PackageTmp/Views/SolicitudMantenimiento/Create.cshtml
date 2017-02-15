@@ -1,0 +1,94 @@
+﻿@model Modelo.SolicitudMantenimiento
+
+@{
+    ViewBag.Title = "Solicitud de Mantenimiento";
+}
+
+<div class="row">
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.IdVehiculo, "Vehículo", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-4">
+                    @Html.DropDownList("IdVehiculo", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.IdVehiculo, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.IdChofer, "Chofer", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-4">
+                    @Html.DropDownList("IdChofer", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.IdChofer, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.TipoMantenimiento, "Tipo Mantenimiento", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-4">
+                        @Html.DropDownList("TipoMantenimiento", null, htmlAttributes: new { @class = "form-control", @onchange = "this.form.action='ComboMantenimiento';this.form.submit();" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.TipoMantenimiento, "Mantenimiento", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-4">
+                    @Html.DropDownList("SubTipoMantimiento", null, htmlAttributes: new { @class = "form-control" })
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Detalle, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.Detalle)
+                    @Html.ValidationMessageFor(model => model.Detalle, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group" id="InputDate">
+                @Html.LabelFor(model => model.FechaIngreso, "Fecha Ingreso", new { @class = "control-label col-md-2" })
+                <div class="input-group date col-md-2">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    @Html.TextBoxFor(model => model.FechaIngreso, "{0:dd/MM/yyyy}", new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.FechaIngreso, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group" id="InputDate">
+                @Html.LabelFor(model => model.FechaEstimadaSalida, "Fecha Estimada Salida", new { @class = "control-label col-md-2" })
+                <div class="input-group date col-md-2">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    @Html.TextBoxFor(model => model.FechaEstimadaSalida, "{0:dd/MM/yyyy}", new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+
+        </div>
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                <input type="submit" value="Guardar" class="btn btn-primary" />
+                            </div>
+                        </div>
+    }
+</div>
+
+
+
+@section BodyFoot {
+    @using (Html.BeginForm("Index", "SolicitudMantenimiento", FormMethod.Get))
+    {
+        <button type="submit" class="btn btn-primary btn-circle" title="Regresar a la lista"><i class="fa fa-arrow-left"></i></button>
+    }
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

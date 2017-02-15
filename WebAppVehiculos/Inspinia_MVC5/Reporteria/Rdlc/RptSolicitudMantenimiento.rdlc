@@ -6,19 +6,19 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>5.5695cm</Width>
+              <Width>5.20533cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>5.59752cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.24652cm</Width>
+              <Width>2.95332cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>8.92502cm</Width>
+              <Width>6.23094cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.90821cm</Width>
+              <Width>2.39006cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.93467cm</Width>
@@ -62,6 +62,7 @@
                           <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -101,6 +102,7 @@
                           <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -140,6 +142,7 @@
                           <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -179,6 +182,7 @@
                           <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -218,6 +222,7 @@
                           <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -257,6 +262,7 @@
                           <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -296,13 +302,13 @@
                           <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -448,7 +454,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!FechaIngreso.Value</Value>
-                              <Style />
+                              <Style>
+                                <Format>d</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -480,7 +488,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!FechaEstimadaSalida.Value</Value>
-                              <Style />
+                              <Style>
+                                <Format>d</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -562,7 +572,7 @@
         <DataSetName>DataSet</DataSetName>
         <Top>0.36573cm</Top>
         <Height>1.75562cm</Height>
-        <Width>31.1107cm</Width>
+        <Width>27.2411cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -573,7 +583,7 @@
     <Height>0.97917in</Height>
     <Style />
   </Body>
-  <Width>12.24831in</Width>
+  <Width>10.72484in</Width>
   <Page>
     <PageHeader>
       <Height>1.5875cm</Height>
@@ -585,7 +595,7 @@
           <Value>Icono</Value>
           <Sizing>FitProportional</Sizing>
           <Top>0.13194cm</Top>
-          <Left>19.90707cm</Left>
+          <Left>19.9619cm</Left>
           <Height>1.32361cm</Height>
           <Width>3.03458cm</Width>
           <Style>
@@ -616,7 +626,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox20</rd:DefaultName>
           <Top>0.43356cm</Top>
-          <Left>5.51467cm</Left>
+          <Left>5.5695cm</Left>
           <Height>0.76799cm</Height>
           <Width>11.03443cm</Width>
           <ZIndex>1</ZIndex>
@@ -662,7 +672,7 @@
           </Paragraphs>
           <rd:DefaultName>PageNumber</rd:DefaultName>
           <Top>0.335cm</Top>
-          <Left>28.13878cm</Left>
+          <Left>23.74861cm</Left>
           <Height>0.56472cm</Height>
           <Width>0.64792cm</Width>
           <Style>
@@ -695,7 +705,7 @@
           </Paragraphs>
           <rd:DefaultName>TotalPages</rd:DefaultName>
           <Top>0.335cm</Top>
-          <Left>29.40878cm</Left>
+          <Left>25.01861cm</Left>
           <Height>0.56472cm</Height>
           <Width>0.9125cm</Width>
           <ZIndex>1</ZIndex>
@@ -727,7 +737,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox4</rd:DefaultName>
           <Top>0.335cm</Top>
-          <Left>26.75002cm</Left>
+          <Left>22.35985cm</Left>
           <Height>0.56472cm</Height>
           <Width>1.24764cm</Width>
           <ZIndex>2</ZIndex>
@@ -759,7 +769,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox4</rd:DefaultName>
           <Top>0.335cm</Top>
-          <Left>28.87551cm</Left>
+          <Left>24.48534cm</Left>
           <Height>0.56472cm</Height>
           <Width>0.53326cm</Width>
           <ZIndex>3</ZIndex>
@@ -791,7 +801,7 @@
           </Paragraphs>
           <rd:DefaultName>ExecutionTime</rd:DefaultName>
           <Top>0.335cm</Top>
-          <Left>0.99253cm</Left>
+          <Left>1.04736cm</Left>
           <Height>0.6cm</Height>
           <Width>3.98167cm</Width>
           <ZIndex>4</ZIndex>
@@ -812,8 +822,8 @@
     </PageFooter>
     <PageHeight>21cm</PageHeight>
     <PageWidth>29.7cm</PageWidth>
-    <LeftMargin>2cm</LeftMargin>
-    <RightMargin>2cm</RightMargin>
+    <LeftMargin>1cm</LeftMargin>
+    <RightMargin>1cm</RightMargin>
     <TopMargin>2cm</TopMargin>
     <BottomMargin>2cm</BottomMargin>
     <ColumnSpacing>0.13cm</ColumnSpacing>

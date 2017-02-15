@@ -1,0 +1,73 @@
+﻿@model Modelo.RegistroActividad
+
+@{
+    ViewBag.Title = "Eliminar Registro";
+}
+
+<div class="row">
+    <div class="col-lg-6">
+        <h4>¿Estás seguro que quieres eliminar?</h4>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Usuario.Nombres)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Usuario.Nombres)
+            </dd>
+
+            <dt>
+               Placa
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Vehiculo.placaLetras) @Html.DisplayFor(model => model.Vehiculo.placaNumeros)
+                @*@Html.DisplayFor(model => model.Vehiculo.placa)*@
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Fecha)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Fecha)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.KmInicial)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.KmInicial)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.KmFinal)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.KmFinal)
+            </dd>
+
+        </dl>
+        
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Eliminar" class="btn btn-warning" />
+            </div>
+        }
+
+
+    </div>
+</div>
+       
+@section BodyFoot {
+    @using (Html.BeginForm("Index", "RegActividad", FormMethod.Get))
+    {
+        <button type="submit" class="btn btn-primary btn-circle" title="Regresar a la lista"><i class="fa fa-arrow-left"></i></button>
+    }
+}
+
