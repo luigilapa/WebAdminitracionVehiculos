@@ -35,4 +35,3 @@ D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Debug\EntityFrame
 D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\bin\Debug\EntityFramework.SqlServer.xml
 D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\obj\Debug\Modelo.dll
 D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\obj\Debug\Modelo.pdb
-D:\GitHub\WebAdminitracionVehiculos\WebAppVehiculos\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache

@@ -68,33 +68,52 @@
                                         @Html.DisplayFor(modelItem => item.Aprobado)
                                     </td>
                                     <td>
-                                        @if (item.Aprobado == false)
+                                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("SolicitudMantenimiento", "Delete"))
                                         {
-                                            using (Html.BeginForm("Delete", "SolicitudMantenimiento", new { id = item.IdSolicitud }, FormMethod.Get))
+                                            if (item.Aprobado == false)
                                             {
-                                            <button type="submit" class="btn btn-danger btn-circle" title="Eliminar"><i class="fa fa-trash-o"></i></button>
-                                           }
+                                                using (Html.BeginForm("Delete", "SolicitudMantenimiento", new { id = item.IdSolicitud }, FormMethod.Get))
+                                                {
+                                                    <button type="submit" class="btn btn-danger btn-circle" title="Eliminar"><i class="fa fa-trash-o"></i></button>
+                                                }
+                                            }
                                         }
-                                    </td>
-                                    <td>
-                                        @if (item.Aprobado == false)
+                                        else
                                         {
-                                           using (Html.BeginForm("Aprobar", "SolicitudMantenimiento", new { id = item.IdSolicitud }, FormMethod.Get))
-                                           {
-                                            <button type="submit" class="btn btn-info btn-circle" title="Aprobar"><i class="fa fa-check"></i></button>
-                                           }
+                                            <button type="button" class="btn btn-outline btn-circle" title="Eliminar"><i class="fa fa-trash-o"></i></button>
                                         }
-                                        
                                     </td>
                                     <td>
-                                        @if (item.Aprobado == false)
+                                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("SolicitudMantenimiento", "Aprobar"))
+                                        {
+                                        if (item.Aprobado == false)
+                                        {
+                                            using (Html.BeginForm("Aprobar", "SolicitudMantenimiento", new { id = item.IdSolicitud }, FormMethod.Get))
+                                            {
+                                            <button type="submit" class="btn btn-info btn-circle" title="Aprobar"><i class="fa fa-check"></i></button>
+                                                }
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <button type="button" class="btn btn-outline btn-circle" title="Eliminar"><i class="fa fa-check"></i></button>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("SolicitudMantenimiento", "Desaprobar"))
+                                        {
+                                        if (item.Aprobado == false)
                                         {
                                             using (Html.BeginForm("Desaprobar", "SolicitudMantenimiento", new { id = item.IdSolicitud }, FormMethod.Get))
                                             {
                                                 <button type="submit" class="btn btn-warning btn-circle" title="Desaprobar"><i class="fa fa-times-circle"></i></button>
+                                                }
                                             }
                                         }
-                                       
+                                        else
+                                        {
+                                            <button type="button" class="btn btn-outline btn-circle" title="Eliminar"><i class="fa fa-times-circle"></i></button>
+                                        }
                                     </td>
                                 </tr>
                             }

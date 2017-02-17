@@ -22,31 +22,39 @@ namespace Inspinia_MVC5.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Autenticar(string usuario, string clave)
         {
-            //string cadena = Seguridad.Encriptar("12345");
-            string claveEncrictada = Seguridad.Encriptar(clave);
-            Usuario login = db.Usuario.Where(x => x.NombreUsuario == usuario && x.Clave == claveEncrictada && x.Activo == true).SingleOrDefault();
-            if (login != null)
+            try
             {
-                //SessionHelper.AddUserToSession(login.idUsuario.ToString()); 
-                Session["Usuario"] = login;
-                Session["Opciones"] = login.Rol.OpcionRol.Where(x=>x.Activo == true && x.TienePermiso == true).Select(x=>x.Opcion).ToList();
-                Session["UsuarioNombre"] = login.Nombres;
-                Session["UsuarioRol"] = login.Rol.NombreRol;
+                //string cadena = Seguridad.Encriptar("12345");
+                string claveEncrictada = Seguridad.Encriptar(clave);
+                Usuario login = db.Usuario.Where(x => x.NombreUsuario == usuario && x.Clave == claveEncrictada && x.Activo == true).FirstOrDefault();
+                if (login != null)
+                {
+                    //SessionHelper.AddUserToSession(login.idUsuario.ToString()); 
+                    Session["Usuario"] = login;
+                    Session["Opciones"] = login.Rol.OpcionRol.Where(x=>x.Activo == true && x.TienePermiso == true).Select(x=>x.Opcion).ToList();
+                    Session["UsuarioNombre"] = login.Nombres;
+                    Session["UsuarioRol"] = login.Rol.NombreRol;
 
-                string xml = System.IO.File.ReadAllText(Server.MapPath(Url.Content("~/Extencion/PlantillasCorreo/PlantillaInicioSesion.html")));
-                var html = xml.ToString();
+                    string xml = System.IO.File.ReadAllText(Server.MapPath(Url.Content("~/Extencion/PlantillasCorreo/PlantillaInicioSesion.html")));
+                    var html = xml.ToString();
 
-                html = html.Replace("@nombres", login.Nombres + " " + login.Apellidos);
-                html = html.Replace("@fecha", DateTime.Now.ToLongDateString()+" "+DateTime.Now.ToShortTimeString());
+                    html = html.Replace("@nombres", login.Nombres + " " + login.Apellidos);
+                    html = html.Replace("@fecha", DateTime.Now.ToLongDateString()+" "+DateTime.Now.ToShortTimeString());
 
-                Correo.EnviarCorreoGmail(login.Correo, "Informe de inicio de sesión", html);
+                    Correo.EnviarCorreoGmail(login.Correo, "Informe de inicio de sesión", html);
 
-                return RedirectToAction("Index", "Inicio");
+                    return RedirectToAction("Index", "Inicio");
             }
             else
             {
                 return View();
             }
+            }
+            catch (Exception)
+            {
+                return View(); 
+            }
+         
         }
 
         public ActionResult CerrarSesion()

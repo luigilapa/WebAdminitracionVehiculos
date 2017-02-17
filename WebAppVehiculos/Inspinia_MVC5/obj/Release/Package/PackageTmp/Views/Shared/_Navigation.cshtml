@@ -1,4 +1,4 @@
-﻿@{ 
+﻿@{
     List<Modelo.Opcion> opciones = (List<Modelo.Opcion>)Session["Opciones"];
 }
 <nav class="navbar-default navbar-static-side" role="navigation">
@@ -30,97 +30,111 @@
             <li class="@Html.IsSelected(controller: "Inicio")">
                 <a href="@Url.Action("Index", "Inicio")"><i class="fa fa-home"></i> <span class="nav-label" data-i18n="nav.layouts">Inicio</span> <span class="label label-primary pull-right">»</span></a>
             </li>
+            @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("VehiculoMarcas", "Index") || Inspinia_MVC5.Tags.FrontUser.TienePermiso("VehiculoTipos", "Index") || Inspinia_MVC5.Tags.FrontUser.TienePermiso("Vehiculos", "Index"))
+            {
+                <li class="@Html.IsSelected(controller: "VehiculoMarcas") @Html.IsSelected(controller: "VehiculoTipos") @Html.IsSelected(controller: "Vehiculos")">
+                    <a href="@Url.Action("Index", "VehiculoMarcas")"><i class="fa fa-truck"></i> <span class="nav-label" data-i18n="nav.dashboard">Datos Vehículos</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Reportes", cssClass: "in")">
+                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("VehiculoMarcas", "Index"))
+                        {
+                            <li class="@Html.IsSelected(action: "VehiculoMarcas")"><a href="@Url.Action("Index", "VehiculoMarcas")">Marcas</a></li>
+                        }
+                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("VehiculoTipos", "Index"))
+                        {
+                            <li class="@Html.IsSelected(action: "VehiculoMarcas")"><a href="@Url.Action("Index", "VehiculoTipos")">Tipos</a></li>
+                        }
+                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("Vehiculos", "Index"))
+                        {
+                            <li class="@Html.IsSelected(action: "VehiculoMarcas")"><a href="@Url.Action("Index", "Vehiculos")">Vehículos</a></li>
+                        }
+                    </ul>
+                </li>
+            }
 
-            <li class="@Html.IsSelected(controller: "VehiculoMarcas") @Html.IsSelected(controller: "VehiculoTipos") @Html.IsSelected(controller: "Vehiculos")">
-                <a href="@Url.Action("Index", "VehiculoMarcas")"><i class="fa fa-truck"></i> <span class="nav-label" data-i18n="nav.dashboard">Datos Vehículos</span> <span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Reportes", cssClass: "in")">
-                    @if (opciones.FirstOrDefault(x => x.controlador.Equals("VehiculoMarcas") && x.accion.Equals("Index") && x.activo == true) != null)
-                    {
-                        <li class="@Html.IsSelected(action: "VehiculoMarcas")"><a href="@Url.Action("Index", "VehiculoMarcas")">Marcas</a></li>
-                    }
-                    @if (opciones.FirstOrDefault(x => x.controlador.Equals("VehiculoTipos") && x.accion.Equals("Index") && x.activo == true) != null)
-                    {
-                        <li class="@Html.IsSelected(action: "VehiculoMarcas")"><a href="@Url.Action("Index", "VehiculoTipos")">Tipos</a></li>
-                    }
-                    @if (opciones.FirstOrDefault(x => x.controlador.Equals("Vehiculos") && x.accion.Equals("Index") && x.activo == true) != null)
-                    {
-                        <li class="@Html.IsSelected(action: "VehiculoMarcas")"><a href="@Url.Action("Index", "Vehiculos")">Vehículos</a></li>
-                    }
-                </ul>
-            </li>
+            @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("SolicitudMantenimiento", "Index") || Inspinia_MVC5.Tags.FrontUser.TienePermiso("RegActividad", "Index"))
+            {
+                <li class="@Html.IsSelected(controller: "SolicitudMantenimiento") @Html.IsSelected(controller: "RegActividad")">
+                    <a href="@Url.Action("Index", "SolicitudMantenimiento")"><i class="fa fa-file-text-o"></i> <span class="nav-label" data-i18n="nav.dashboard">Choferes</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "SolicitudMantenimiento", cssClass: "in")">
+                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("SolicitudMantenimiento", "Index"))
+                        {
+                            <li class="@Html.IsSelected(action: "SolicitudMantenimiento")"><a href="@Url.Action("Index", "SolicitudMantenimiento")">Solicitud Mantenimiento</a></li>
+                        }
+                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("RegActividad", "Index"))
+                        {
+                            <li class="@Html.IsSelected(action: "RegActividad")"><a href="@Url.Action("Index", "RegActividad")">Registro Actividad</a></li>
+                        }
+                    </ul>
+                </li>
+            }
 
-            <li class="@Html.IsSelected(controller: "SolicitudMantenimiento") @Html.IsSelected(controller: "RegActividad")">
-                <a href="@Url.Action("Index", "SolicitudMantenimiento")"><i class="fa fa-file-text-o"></i> <span class="nav-label" data-i18n="nav.dashboard">Choferes</span> <span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "SolicitudMantenimiento", cssClass: "in")">
-                    @if (opciones.FirstOrDefault(x => x.controlador.Equals("SolicitudMantenimiento") && x.accion.Equals("Index") && x.activo == true) != null)
-                    {
-                        <li class="@Html.IsSelected(action: "SolicitudMantenimiento")"><a href="@Url.Action("Index", "SolicitudMantenimiento")">Solicitud Mantenimiento</a></li>
-                    }
-                    @if (opciones.FirstOrDefault(x => x.controlador.Equals("RegActividad") && x.accion.Equals("Index") && x.activo == true) != null)
-                    {
-                        <li class="@Html.IsSelected(action: "RegActividad")"><a href="@Url.Action("Index", "RegActividad")">Registro Actividad</a></li>
-                    }
-                </ul>
-            </li>
+            @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("Reportes", "Choferes") || Inspinia_MVC5.Tags.FrontUser.TienePermiso("Reportes", "Vehiculos") || Inspinia_MVC5.Tags.FrontUser.TienePermiso("Reportes", "VehiculoChofer")
+                    || Inspinia_MVC5.Tags.FrontUser.TienePermiso("Reportes", "RegistroActiviades") || Inspinia_MVC5.Tags.FrontUser.TienePermiso("Reportes", "SolicitudMantenimiento"))
+            {
+                <li class="@Html.IsSelected(controller: "Reportes")">
+                    <a href="@Url.Action("Choferes", "Reportes")"><i class="fa fa-newspaper-o"></i> <span class="nav-label" data-i18n="nav.dashboard">Reportes</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Reportes", cssClass: "in")">
+                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("Reportes", "Choferes"))
+                        {
+                            <li class="@Html.IsSelected(action: "Choferes")"><a href="@Url.Action("Choferes", "Reportes")" target="_blank">Choferes</a></li>
+                        }
+                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("Reportes", "Vehiculos"))
+                        {
+                            <li class="@Html.IsSelected(action: "Vehiculos")"><a href="@Url.Action("Vehiculos", "Reportes")" target="_blank">Vehículos</a></li>
+                        }
+                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("Reportes", "VehiculoChofer"))
+                        {
+                            <li class="@Html.IsSelected(action: "VehiculoChofer")"><a href="@Url.Action("VehiculoChofer", "Reportes")" target="_blank">Vehículo Chofer</a></li>
+                        }
+                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("Reportes", "RegistroActiviades"))
+                        {
+                            <li class="@Html.IsSelected(action: "RegistroActiviades")"><a href="@Url.Action("RegistroActiviades", "Reportes")" target="_blank">Registro Actividades</a></li>
+                        }
+                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("Reportes", "SolicitudMantenimiento"))
+                        {
+                            <li class="@Html.IsSelected(action: "SolicitudMantenimiento")"><a href="@Url.Action("SolicitudMantenimiento", "Reportes")" target="_blank">Solicitud Mantenimiento</a></li>
+                        }
+                    </ul>
+                </li>
+            }
 
-            <li class="@Html.IsSelected(controller: "Reportes")">
-                <a href="@Url.Action("Choferes", "Reportes")"><i class="fa fa-newspaper-o"></i> <span class="nav-label" data-i18n="nav.dashboard">Reportes</span> <span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Reportes", cssClass: "in")">
-                    @if (opciones.FirstOrDefault(x => x.controlador.Equals("Choferes") && x.accion.Equals("Reportes") && x.activo == true) != null)
-                    {
-                        <li class="@Html.IsSelected(action: "Choferes")"><a href="@Url.Action("Choferes", "Reportes")" target="_blank">Choferes</a></li>
-                    }
-                    @if (opciones.FirstOrDefault(x => x.controlador.Equals("Vehiculos") && x.accion.Equals("Reportes") && x.activo == true) != null)
-                    {
-                        <li class="@Html.IsSelected(action: "Vehiculos")"><a href="@Url.Action("Vehiculos", "Reportes")" target="_blank">Vehículos</a></li>
-                    }
-                    @if (opciones.FirstOrDefault(x => x.controlador.Equals("VehiculoChofer") && x.accion.Equals("Reportes") && x.activo == true) != null)
-                    {
-                        <li class="@Html.IsSelected(action: "VehiculoChofer")"><a href="@Url.Action("VehiculoChofer", "Reportes")" target="_blank">Vehículo Chofer</a></li>
-                    }
-                    @if (opciones.FirstOrDefault(x => x.controlador.Equals("RegistroActiviades") && x.accion.Equals("Reportes") && x.activo == true) != null)
-                    {
-                        <li class="@Html.IsSelected(action: "RegistroActiviades")"><a href="@Url.Action("RegistroActiviades", "Reportes")" target="_blank">Registro Actividades</a></li>
-                    }
-                    @if (opciones.FirstOrDefault(x => x.controlador.Equals("SolicitudMantenimiento") && x.accion.Equals("Reportes") && x.activo == true) != null)
-                    {
-                        <li class="@Html.IsSelected(action: "SolicitudMantenimiento")"><a href="@Url.Action("SolicitudMantenimiento", "Reportes")" target="_blank">Solicitud Mantenimiento</a></li>
-                    }
-                </ul>
-            </li>
+            @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("Usuarios", "Index") || Inspinia_MVC5.Tags.FrontUser.TienePermiso("VehiculoChofer", "Index"))
+            {
+                <li class="@Html.IsSelected(controller: "Usuarios") @Html.IsSelected(controller: "VehiculoChofer")">
+                    <a href="@Url.Action("Index", "VehiculoChofer")"><i class="fa fa-cogs"></i> <span class="nav-label" data-i18n="nav.dashboard">Administración</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "VehiculoChofer", cssClass: "in")">
+                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("Usuarios", "Index"))
+                        {
+                            <li class="@Html.IsSelected(action: "Usuarios")"><a href="@Url.Action("Index", "Usuarios")">Usuarios</a></li>
+                        }
+                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("VehiculoChofer", "Index"))
+                        {
+                            <li class="@Html.IsSelected(action: "VehiculoChofer")"><a href="@Url.Action("Index", "VehiculoChofer")">Vehículo Chofer</a></li>
+                        }
+                    </ul>
+                </li>
+            }
 
-            <li class="@Html.IsSelected(controller: "Usuarios") @Html.IsSelected(controller: "VehiculoChofer")">
-                <a href="@Url.Action("Index", "VehiculoChofer")"><i class="fa fa-cogs"></i> <span class="nav-label" data-i18n="nav.dashboard">Administración</span> <span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "VehiculoChofer", cssClass: "in")">
-                    @if (opciones.FirstOrDefault(x => x.controlador.Equals("Usuarios") && x.accion.Equals("Index") && x.activo == true) != null)
-                    {
-                        <li class="@Html.IsSelected(action: "Usuarios")"><a href="@Url.Action("Index", "Usuarios")">Usuarios</a></li>
-                    }
-                    @if (opciones.FirstOrDefault(x => x.controlador.Equals("VehiculoChofer") && x.accion.Equals("Index") && x.activo == true) != null)
-                    {
-                        <li class="@Html.IsSelected(action: "VehiculoChofer")"><a href="@Url.Action("Index", "VehiculoChofer")">Vehículo Chofer</a></li>
-                    }
-                </ul>
-            </li>
-
-            <li class="@Html.IsSelected(controller: "Parametros") @Html.IsSelected(controller: "Rol") @Html.IsSelected(controller: "Opcion")">
-                <a href="@Url.Action("Index", "Parametros")"><i class="fa fa-sitemap"></i> <span class="nav-label" data-i18n="nav.dashboard">Configuración</span> <span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Reportes", cssClass: "in")">
-                    @if (opciones.FirstOrDefault(x => x.controlador.Equals("Parametros") && x.accion.Equals("Index") && x.activo == true) != null)
-                    {
-                        <li class="@Html.IsSelected(action: "Parametros")"><a href="@Url.Action("Index", "Parametros")">Parametros</a></li>
-                    }
-                    @if (opciones.FirstOrDefault(x => x.controlador.Equals("Rol") && x.accion.Equals("Index") && x.activo == true) != null)
-                    {
-                        <li class="@Html.IsSelected(action: "Rol")"><a href="@Url.Action("Index", "Rol")">Roles</a></li>
-                    }
-                    @if (opciones.FirstOrDefault(x => x.controlador.Equals("Opcion") && x.accion.Equals("Index") && x.activo == true) != null)
-                    {
-                        <li class="@Html.IsSelected(action: "Opcion")"><a href="@Url.Action("Index", "Opcion")">Opciones</a></li>
-                    }
-                </ul>
-            </li>
-          
+            @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("Parametros", "Index") || Inspinia_MVC5.Tags.FrontUser.TienePermiso("Rol", "Index") || Inspinia_MVC5.Tags.FrontUser.TienePermiso("Opcion", "Index"))
+            {
+                <li class="@Html.IsSelected(controller: "Parametros") @Html.IsSelected(controller: "Rol") @Html.IsSelected(controller: "Opcion")">
+                    <a href="@Url.Action("Index", "Parametros")"><i class="fa fa-sitemap"></i> <span class="nav-label" data-i18n="nav.dashboard">Configuración</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Reportes", cssClass: "in")">
+                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("Parametros", "Index"))
+                        {
+                            <li class="@Html.IsSelected(action: "Parametros")"><a href="@Url.Action("Index", "Parametros")">Parametros</a></li>
+                        }
+                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("Rol", "Index"))
+                        {
+                            <li class="@Html.IsSelected(action: "Rol")"><a href="@Url.Action("Index", "Rol")">Roles</a></li>
+                        }
+                        @if (Inspinia_MVC5.Tags.FrontUser.TienePermiso("Opcion", "Index"))
+                        {
+                            <li class="@Html.IsSelected(action: "Opcion")"><a href="@Url.Action("Index", "Opcion")">Opciones</a></li>
+                        }
+                    </ul>
+                </li>
+            }
         </ul>
     </div>
 </nav>
